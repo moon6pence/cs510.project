@@ -9,7 +9,9 @@
 // Precision to use for calculations
 #define fptype float
 #define ERR_CHK
-#define NUM_RUNS 100
+#define NUM_RUNS 1
+
+const int OptionDataCount = 10000000;
 
 typedef struct OptionData_ 
 {
@@ -175,8 +177,6 @@ fptype BlkSchlsEqEuroNoDiv( fptype sptprice,
 
 int main (int argc, char **argv)
 {
-    const int OptionDataCount = 100000;
-
     // How many elements do we have in our hard-coded datafile?
     int initOptionNum =  ((sizeof(data_init)) / sizeof(OptionData));
 
